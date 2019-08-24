@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">KtPokedex</string>
+    <string name="can_not_load_results">Can\'t load results</string>
+    <string name="txt_wild">Wild</string>
+    <string name="txt_already_caught">Already caught</string>
+    <string name="txt_appeared">appeared!</string>
+    <string name="txt_pokeball">Pokeball!</string>
+    <string name="txt_catched_time">Catched time</string>
+    <string name="txt_escape">Escape</string>
+    <string name="txt_weight">Weight</string>
+    <string name="txt_height">Height</string>
+    <string name="txt_you_escaped">You escaped!</string>
+    <string name="txt_catched">Catched!</string>
+    <string name="msg_no_pokemon_in_area">No Pokemons in this area, try again!</string>
+    <string name="txt_return_backpack">Return to Backpack</string>
+    <string name="txt_retry">Retry</string>
+    <string name="msg_empty_backpack">Empty backpack, go hunting Pokemons!</string>
+    <string name="txt_base_experience">Base experience</string>
+    <string name="txt_types">Types</string>
+    <string name="txt_kg">kg</string>
+    <string name="txt_xp">xp</string>
+    <string name="txt_m">m</string>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDetailsPokemonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/pokemon_name_margin_top"
+            android:gravity="center"
+            android:textSize="@dimen/heading_text_size"
+            android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivDetailsPokemonPoster"
+            android:layout_width="@dimen/pokemon_poster_width"
+            android:layout_height="@dimen/pokemon_poster_height"
+            android:layout_below="@+id/tvDetailsPokemonName"
+            android:layout_centerHorizontal="true" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDetailsPokemonCatchedTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivDetailsPokemonPoster"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDetailsPokemonWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDetailsPokemonCatchedTime"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDetailsPokemonHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDetailsPokemonWeight"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDetailsPokemonBaseExperience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDetailsPokemonHeight"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDetailsPokemonTypes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDetailsPokemonBaseExperience"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvReturnToBackpack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDetailsPokemonTypes"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/try_again_text_margin_top"
+            android:clickable="true"
+            android:focusable="false"
+            android:padding="@dimen/clickable_text_padding"
+            android:text="@string/txt_return_backpack"
+            android:textAllCaps="false"
+            android:textColor="@color/accent"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/subheading_text_size" />
+</RelativeLayout>

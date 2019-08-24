@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvWildPokemonAppeared"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/pokemon_name_margin_top"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/heading_text_size"
+            android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivPokemon"
+            android:layout_width="@dimen/pokemon_poster_width"
+            android:layout_height="@dimen/pokemon_poster_height"
+            android:layout_below="@id/tvWildPokemonAppeared"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/searched_pokemon_poster_margin_top" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivPokemon"
+            android:layout_alignStart="@id/tvWildPokemonAppeared"
+            android:layout_alignLeft="@id/tvWildPokemonAppeared"
+            android:layout_marginStart="@dimen/searched_pokemon_attribute_margin_start"
+            android:layout_marginLeft="@dimen/searched_pokemon_attribute_margin_start"
+            android:layout_marginTop="@dimen/searched_pokemon_first_attribute_margin_top" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvWeight"
+            android:layout_alignStart="@id/tvWeight"
+            android:layout_alignLeft="@id/tvWeight"
+            android:layout_marginTop="@dimen/searched_pokemon_attribute_margin_top" />
+
+    <LinearLayout
+            android:id="@+id/llSearchedPokemonButtons"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/searched_pokemon_buttons_layout_height"
+            android:layout_below="@id/tvHeight"
+            android:layout_marginTop="@dimen/searched_pokemon_buttons_layout_margin_top"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnPokeball"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/searched_pokemon_buttons_right_margin"
+                android:layout_marginRight="@dimen/searched_pokemon_buttons_right_margin"
+                android:layout_weight="1"
+                android:text="@string/txt_pokeball"
+                android:textAllCaps="false"
+                android:textSize="@dimen/body_text_size"
+                android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnEscape"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/txt_escape"
+                android:textAllCaps="false"
+                android:textSize="@dimen/body_text_size"
+                android:visibility="gone" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvReturnToBackpack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llSearchedPokemonButtons"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/try_again_text_margin_top"
+            android:clickable="true"
+            android:focusable="false"
+            android:padding="@dimen/clickable_text_padding"
+            android:text="@string/txt_return_backpack"
+            android:textAllCaps="false"
+            android:textColor="@color/accent"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/subheading_text_size"
+            android:visibility="gone" />
+
+    <ProgressBar
+            android:id="@+id/pbLoadingPokemon"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ivPokemon"
+            android:layout_centerInParent="true" />
+
+</RelativeLayout>
