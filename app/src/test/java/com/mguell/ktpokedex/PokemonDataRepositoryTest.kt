@@ -38,7 +38,7 @@ class PokemonDataRepositoryTest {
     }
 
     @Test
-    fun should_return_a_list_with_popular_movies() {
+    fun should_return_a_list_with_pokemon() {
         val pokemonByIdResponse = givenPokemon()
         `when`(networkPokemonDataStore.pokemonById(anyInt())).thenReturn(
             Observable.just(
