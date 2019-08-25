@@ -18,7 +18,19 @@ data class Pokemon(
         return id
     }
 
+    /**
+     * Comparing everything but catched time. Bulbasaur is Bulbasaur whether its wild
+     * or caught.
+     */
     override fun equals(other: Any?): Boolean {
-        return other is Pokemon && other.id == id
+        return other is Pokemon
+                && other.name == name
+                && other.height == height
+                && other.weight == weight
+                && other.id == id
+                && other.posterPath == posterPath
+                && other.order == order
+                && other.baseExperience == baseExperience
+                && other.types == types
     }
 }
